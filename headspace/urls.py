@@ -17,6 +17,8 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^', include('incident_manager.urls')),
+    url(r'^', include('symptom_manager.urls')),
     url(r'^', include('user_manager.urls')),
     url(
         r'^api-auth/',
